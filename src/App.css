@@ -1,38 +1,70 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f7fa;
+}
+
+.app {
   text-align: center;
+  padding: 50px 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav button {
+  font-size: 1.5em;
+  padding: 15px 30px;
+  margin: 5px;
+  border: none;
+  border-radius: 12px;
+  background-color: #4caf50; /* Default tab color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav button:hover {
+  background-color: #45a049; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+nav button:focus {
+  outline: none;
+}
+
+nav button.active {
+  background-color: #e91e63; /* Active tab color */
+  box-shadow: 0 4px 10px rgba(233, 30, 99, 0.6);
+}
+
+.conversion-section {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.conversion-section div {
+  margin-top: 20px;
+}
+
+.conversion-section button {
+  margin-top: 20px;
+}
+h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #3f51b5;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  margin-top: 10px;
+  background: linear-gradient(to right, #3f51b5, #e91e63);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  gap: 15px;
 }

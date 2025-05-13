@@ -1,0 +1,65 @@
+.length-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .length-input {
+    font-size: 2em;
+    padding: 15px 25px;
+    border-radius: 15px;
+    border: 2px solid #3f51b5;
+    width: 300px;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: #e8f0fe;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .length-input:focus {
+    border-color: #e91e63;
+  }
+  
+  .length-error {
+    color: red;
+    margin: -10px 0 15px;
+    font-size: 1em;
+  }
+  
+  .selectors {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .select-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .select-box select {
+    font-size: 1.1em;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #999;
+    background-color: #fffbe6;
+    color: #333;
+    height: auto;
+  }
+  
+  .result {
+    font-size: 2em;
+    color: #303f9f;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: white; /* White background for the result */
+    border: 2px solid #3f51b5; /* Border color similar to input field */
+    width: 400px;
+    text-align: center;
+    height: 40px
+  }
